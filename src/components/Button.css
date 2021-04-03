@@ -1,0 +1,31 @@
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-color: rgba(0, 0, 0, 0.075);
+  outline: none;
+  background-color: rgba(0, 0, 0, 0);
+  color: #35254d;
+  width: 8rem;
+  font-size: 2rem;
+  white-space: nowrap;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+button:hover::after {
+  transform: scaleX(1.5) scaleY(1.6);
+  opacity: 0;
+}
+
+button:active {
+  transform: translateY(1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+span {
+  display: none;
+}

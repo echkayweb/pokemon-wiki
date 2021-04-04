@@ -54,26 +54,28 @@ class App extends Component {
     return (
       <div className="container">
         <h1 className="header">Pokemon Wiki</h1>
-        <div className="prev">
+        <div>
           <Button
             buttonText={"Previous"}
             clicked={this.onPrevClicked}
-            icon={"fa fa-chevron-left fa-3x"}
+            icon={"fa fa-chevron-left fa-2x"}
             customClass={"left"}
           />
         </div>
-        <PokemonImage altText={pokemon.name} id={id} />
-        <PokemonDetails
-          name={pokemon.name}
-          height={pokemon.height}
-          weight={pokemon.weight}
-          abilities={abilities}
-        />
-        <div className="next">
+        <div className="card">
+          <PokemonImage altText={pokemon.name} id={id} />
+          <PokemonDetails
+            name={pokemon.name}
+            height={pokemon.height}
+            weight={pokemon.weight}
+            abilities={abilities}
+          />
+        </div>
+        <div>
           <Button
             buttonText={"Next"}
             clicked={this.onNextClicked}
-            icon={"fa fa-chevron-right fa-3x"}
+            icon={"fa fa-chevron-right fa-2x"}
             customClass={"right"}
           />
         </div>

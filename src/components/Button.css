@@ -29,3 +29,9 @@ button:active {
 span {
   display: none;
 }
+
+@media only screen and (max-width: 950px) {
+  button, button:hover {
+    transform: scale(0.7);
+  }
+}
